@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<a href="/" class="btn btn-secondary mb-3">⬅ Regresar al menú</a>
+
+<h4>Registro de Nacimiento</h4>
+
+<form method="post" class="row g-3">
+    <input class="form-control" name="becerro" placeholder="Nombre del becerro" required>
+
+    <input type="date" class="form-control" name="fecha" required>
+
+    <select class="form-control" name="sexo">
+        <option>Hembra</option>
+        <option>Macho</option>
+    </select>
+
+    <input class="form-control" name="vaca" placeholder="Nombre de la vaca">
+    <input class="form-control" name="toro" placeholder="Nombre del toro">
+
+    <button class="btn btn-success">Guardar</button>
+</form>
+
+{% endblock %}
