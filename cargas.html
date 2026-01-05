@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<a href="/" class="btn btn-secondary mb-3">⬅ Regresar al menú</a>
+
+<h4>Registro de Vaca Cargada</h4>
+
+<form method="post" class="row g-3">
+    <input class="form-control" name="vaca" placeholder="Nombre de la vaca" required>
+
+    <input type="date" class="form-control" name="fecha" required>
+
+    <input class="form-control" name="toro" placeholder="Nombre del toro">
+
+    <button class="btn btn-primary">Guardar</button>
+</form>
+
+{% endblock %}
